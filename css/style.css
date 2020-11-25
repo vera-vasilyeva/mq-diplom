@@ -481,7 +481,7 @@ a {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.search-button:hover, .subscribe-button:hover, .product-button:hover, .feedback-button:hover {
+.search-button:hover, .subscribe-button:hover, .product-link-box:hover, .feedback-button:hover {
     background-color: #323232;
     ;
 }
@@ -498,7 +498,7 @@ a {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.subscribe-button, .product-button, .feedback-button {
+.subscribe-button, .product-link-box, .feedback-button {
     font-family: OpenSans, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -648,6 +648,10 @@ a {
     display: none;
 }
 
+.product-link {
+    color: #ffffff;
+}
+
 .footer {
     padding-bottom: 40px;
 }
@@ -716,7 +720,7 @@ a {
     color: #999999;
 }
 
-.popup {
+.ppopup {
     display: none;
 }
 
@@ -813,7 +817,10 @@ a {
 }
 
 .feedback-field-textarea {
+    min-width: 100%;
+    max-width: 100%;
     min-height: 130px;
+    max-height: 180px;
 }
 
 .popup-close {
@@ -1052,7 +1059,7 @@ a {
     }
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
+@media (max-height: 641px) and (orientation: landscape) {
     .trends-articles {
         flex-wrap: wrap;
     }
